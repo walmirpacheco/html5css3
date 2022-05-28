@@ -1,9 +1,33 @@
-/*
-    Folha de estilo do site one page HTML5 e CSS3
-    @autor Walmir F Pacheco
-    walmir.pacheco34@gmail.com
-*/
+/*    Folha de estilo do site one page HTML5 e CSS3  */
+/*    @autor Walmir F Pacheco     */
+/*    walmir.pacheco34@gmail.com  */
 
-body{
-    background-color: #ff0000;
+/* Smartphone Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+/* Smarttphone Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+@media (min-width: 576px){
+    body{
+        background-color: #0ff;
+    }
+}
+
+/* Tablet Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+@media (min-width: 768px){
+    body{
+        background-color: #ff0;
+    }
+}
+
+/* Tablet Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+@media (min-width: 992px){
+    body{
+        background-color: #f60;
+    }
+}
+
+/* PC >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+@media (min-width: 1200px){
+    body{
+        background-color: #f00;
+    }
 }
