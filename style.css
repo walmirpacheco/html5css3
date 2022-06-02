@@ -31,6 +31,10 @@ body {
     display: flex;
     align-items: center;
 }
+.Flex3 {
+    display: flex;
+    flex-direction: column;
+}
 
 .Botao {
     text-decoration: none;
@@ -130,6 +134,19 @@ body {
         margin: 20px 0px 50px 0px;
     }
 
+    #onepage h2 {
+        margin-bottom: 10px;
+    }
+
+    #onepage p {
+        margin-bottom: 25px;
+    }
+
+    #video iframe {
+        width: 340px;
+        height: 191px;
+        border: 0;
+    }
     /* Sobre */
     #sobre {
         padding: 5px 0px 10px 0px;
@@ -147,9 +164,9 @@ body {
         padding: 0px 10px;
     }
 
-#textoSobre h2 {
-    margin-bottom: 10px;
-}
+    #textoSobre h2 {
+        margin-bottom: 10px;
+    }
 
     .TopicosSobre {
         margin-top: 20px;
@@ -157,7 +174,12 @@ body {
 
     .TopicosSobre img {
         margin-right: 10px;
-}
+    }
+
+    /* One page */
+    #onepage {
+        padding: 50px 10px;
+    }
 /* Smarttphone Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 576px){
     /* Layout */
@@ -202,6 +224,12 @@ body {
         border: 2px solid #fff;
         border-radius: 25px; 
         margin: 5px 0px 50px 150px; 
+    }
+
+    /* One page */
+    #video iframe {
+        width: 560px;
+        height: 315px;
     }
 }
 
@@ -298,5 +326,10 @@ body {
     #destaqueSobre img {
         border-radius: 50%;
         margin: 50px;
+    }
+
+    /* One page */
+    .Flex3 {
+        flex-direction: row;
     }
 }
