@@ -53,107 +53,110 @@ body {
 /* Smartphone Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
 /* Cabeçalho */
-header {
-    height: 60px;
-}
+    header {
+        height: 60px;
+    }
 
-#logo img {
-    width: 128px;
-    height: 128px;
-}
+    #logo img {
+        width: 128px;
+        height: 128px;
+    }
 
-.Container {
-    margin: 0px 0px 13px 0px; 
-}
+    .Container {
+        margin: 0px 0px 13px 0px; 
+    }
 
-.Flex {
-    display: flex;
-    justify-content: space-between;
-}
+    .Flex {
+        display: flex;
+        justify-content: space-between;
+    }
 
-#check {
-    display: none;    
-}
+    #check {
+        display: none;    
+    }
 
-label {
-    font-size: 3em;
-    padding-right: 15px;
-}
+    label {
+        font-size: 3em;
+        position: fixed;
+        top: 5px;
+        right: 15px;
+        color: rgba(0,0,0,0.5);
+    }
 
-nav ul {
-    list-style: none;
-    background-color: #343538;
-    height: 100vh;
-    position: fixed;
-    top: 60px;
-    right: -100%;
-    width: 100%;
-    transition: all 0.5s;
-}
+    nav ul {
+        list-style: none;
+        background-color: #343538;
+        height: 100vh;
+        position: fixed;
+        top: 60px;
+        right: -100%;
+        width: 100%;
+        transition: all 0.5s;
+    }
 
-#check:checked ~ ul {
-    right: 0%;
-}
+    #check:checked ~ ul {
+        right: 0%;
+    }
 
-nav ul li {
-    padding: 20px;
-    border-bottom: 1px solid #a9a9a9;
-}
+    nav ul li {
+        padding: 20px;
+        border-bottom: 1px solid #a9a9a9;
+    }
 
-nav ul li a {
-    text-decoration: none;
-    color: #fff;
-}
+    nav ul li a {
+        text-decoration: none;
+        color: #fff;
+    }
 
-/* Destaque */
-main {
-    height: 75vh;
-    background: url(img/banner.jpg);
-    background-size: cover;
-    background-position: center;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-}
+    /* Destaque */
+    main {
+        height: 75vh;
+        background: url(img/banner.jpg);
+        background-size: cover;
+        background-position: center;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }   
 
-main h1 {
-    font-size: 2.5em;
-}
+    main h1 {
+        font-size: 2.5em;
+    }
 
-main h2 {
-    font-size: 1em;
-    margin: 20px 0px 50px 0px;
-}
+    main h2 {
+        font-size: 1em;
+        margin: 20px 0px 50px 0px;
+    }
 
-/* Sobre */
-#sobre {
-    padding: 5px 0px 10px 0px;
-    background: url(img/background.png);
-    background-size: cover;
-    background-position: center;
-}
+    /* Sobre */
+    #sobre {
+        padding: 5px 0px 10px 0px;
+        background: url(img/background.png);
+        background-size: cover;
+        background-position: center;
+    }
 
-#destaqueSobre {
-    display: none;
-}
+    #destaqueSobre {
+        display: none;
+    }
 
-#textoSobre {
-    color: #fff;
-    padding: 0px 10px;
-}
+    #textoSobre {
+        color: #fff;
+        padding: 0px 10px;
+    }
 
 #textoSobre h2 {
     margin-bottom: 10px;
 }
 
-.TopicosSobre {
-    margin-top: 20px;
-}
+    .TopicosSobre {
+        margin-top: 20px;
+    }
 
-.TopicosSobre img {
-    margin-right: 10px;
+    .TopicosSobre img {
+        margin-right: 10px;
 }
 /* Smarttphone Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 576px){
@@ -164,7 +167,7 @@ main h2 {
 
     /* Destaque */
     main h1, main h2 {
-    text-shadow: #000 0.05em 0.05em 0.05em;
+        text-shadow: #000 0.05em 0.05em 0.05em;
     }
     
     main h1 {
@@ -173,33 +176,33 @@ main h2 {
     }
 
     main h2 {
-    font-size: 1em;
-    margin: 10px 0px 50px 150px;
+        font-size: 1em;
+        margin: 10px 0px 50px 150px;
     }
         
-main {
-    height: 75vh;
-    background: url(img/banner.jpg);
-    background-size: cover;
-    background-position: center;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;    
-}
+    main {
+        height: 75vh;
+        background: url(img/banner.jpg);
+        background-size: cover;
+        background-position: center;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;    
+    }
 
-.Botao {
-    text-decoration: none;
-    color: #fff;
-    font-size: 1.3em;
-    font-weight: 700;
-    background-color: #c00000;    
-    padding: 10px 40px;
-    border: 2px solid #fff;
-    border-radius: 25px; 
-    margin: 5px 0px 50px 150px; 
-}
+    .Botao {
+        text-decoration: none;
+        color: #fff;
+        font-size: 1.3em;
+        font-weight: 700;
+        background-color: #c00000;    
+        padding: 10px 40px;
+        border: 2px solid #fff;
+        border-radius: 25px; 
+        margin: 5px 0px 50px 150px; 
+    }
 }
 
 /* Tablet Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
@@ -208,25 +211,25 @@ main {
     .Container {
         max-width: 720px;
     }
-/* Destaque */
-main {
-    height: 40vh;
-}
+    /* Destaque */
+    main {
+        height: 40vh;
+    }
 
-main h1 {
-    font-size: 5em;    
-}
+    main h1 {
+        font-size: 5em;    
+    }
 
-main h2 {
-    font-size: 1.5em;
-    margin: 20px 0px 50px 150px;
-}
-/* Sobre */
-#sobre {
-    padding: 50px 0px 10px 0px;
-    background: url(img/background.png);
-    background-size: cover;
-}
+    main h2 {
+        font-size: 1.5em;
+        margin: 20px 0px 50px 150px;
+    }
+    /* Sobre */
+    #sobre {
+        padding: 50px 0px 10px 0px;
+        background: url(img/background.png);
+        background-size: cover;
+    }
 }
 /* Tablet Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 992px){
@@ -295,6 +298,5 @@ main h2 {
     #destaqueSobre img {
         border-radius: 50%;
         margin: 50px;
-
     }
 }
