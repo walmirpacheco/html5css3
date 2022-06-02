@@ -19,7 +19,7 @@ body {
 
 /* Layout */
 .Container {
-    margin: 0 auto;
+    margin: 0px  auto;
 }
 
 .Flex {
@@ -27,15 +27,20 @@ body {
     justify-content: space-between;
 }
 
+.Flex2 {
+    display: flex;
+    align-items: center;
+}
+
 .Botao {
     text-decoration: none;
     color: #fff;
     font-size: 1.3em;
     font-weight: 700;
-    background-color: #c00000;
+    background-color: #c00000;    
     padding: 10px 40px;
     border: 2px solid #fff;
-    border-radius: 25px;
+    border-radius: 25px;  
 }
 
 /* topo do site */
@@ -57,44 +62,13 @@ header {
     height: 128px;
 }
 
-/* Destaque */
-main {
-    height: 75vh;
-    background: url(img/banner.jpg);
-    background-size: cover;
-    color: #fff;
+.Container {
+    margin: 0px 0px 13px 0px; 
+}
+
+.Flex {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-}
-
-main h1 {
-    font-size: 2.5em;
-}
-
-main h2 {
-    font-size: 1em;
-    margin: 20px 0px 50px 0px;
-}
-/* Smarttphone Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
-@media (min-width: 576px){
-    /* Layout */
-    .Container {
-        max-width: 540px;
-    }
-}
-
-/* Destaque */
-main h1, main h2 {
-    text-shadow: #000 0.05em 0.05em 0.05em;
-}
-/* Tablet Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
-@media (min-width: 768px){
-    /* Layout */
-    .Container {
-        max-width: 720px;
-    }
+    justify-content: space-between;
 }
 
 #check {
@@ -118,7 +92,7 @@ nav ul {
 }
 
 #check:checked ~ ul {
-    right: 0%
+    right: 0%;
 }
 
 nav ul li {
@@ -133,17 +107,127 @@ nav ul li a {
 
 /* Destaque */
 main {
-    height: 45vh;
+    height: 75vh;
+    background: url(img/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
 }
 
 main h1 {
-    font-size: 5.5em;
+    font-size: 2.5em;
 }
 
 main h2 {
-    font-size: 2em;
+    font-size: 1em;
+    margin: 20px 0px 50px 0px;
 }
 
+/* Sobre */
+#sobre {
+    padding: 5px 0px 10px 0px;
+    background: url(img/background.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#destaqueSobre {
+    display: none;
+}
+
+#textoSobre {
+    color: #fff;
+    padding: 0px 10px;
+}
+
+#textoSobre h2 {
+    margin-bottom: 10px;
+}
+
+.TopicosSobre {
+    margin-top: 20px;
+}
+
+.TopicosSobre img {
+    margin-right: 10px;
+}
+/* Smarttphone Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+@media (min-width: 576px){
+    /* Layout */
+    .Container {
+        max-width: 540px;
+    }
+
+    /* Destaque */
+    main h1, main h2 {
+    text-shadow: #000 0.05em 0.05em 0.05em;
+    }
+    
+    main h1 {
+    font-size: 2.5em;
+    margin: 10px 0px 25px 150px;
+    }
+
+    main h2 {
+    font-size: 1em;
+    margin: 10px 0px 50px 150px;
+    }
+        
+main {
+    height: 75vh;
+    background: url(img/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;    
+}
+
+.Botao {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.3em;
+    font-weight: 700;
+    background-color: #c00000;    
+    padding: 10px 40px;
+    border: 2px solid #fff;
+    border-radius: 25px; 
+    margin: 5px 0px 50px 150px; 
+}
+}
+
+/* Tablet Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+@media (min-width: 768px){
+    /* Layout */
+    .Container {
+        max-width: 720px;
+    }
+/* Destaque */
+main {
+    height: 40vh;
+}
+
+main h1 {
+    font-size: 5em;    
+}
+
+main h2 {
+    font-size: 1.5em;
+    margin: 20px 0px 50px 150px;
+}
+/* Sobre */
+#sobre {
+    padding: 50px 0px 10px 0px;
+    background: url(img/background.png);
+    background-size: cover;
+}
+}
 /* Tablet Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 992px){
     /* Layout */
@@ -161,15 +245,15 @@ main h2 {
 @media (min-width: 1200px){
     /* Layout */
     .Container {
-        max-width: 1140px;
+        max-width: 1140px;       
     }
 
     /* Cabeçalho */
     header {
         height: 120px;        
-    }
+    }   
 
-    #logo img{
+    #logo img {
         width: 189px;
         height: 189px;
         margin-top: 30px;
@@ -199,4 +283,18 @@ main h2 {
         color: #c00000;
     }
 
+    /* Sobre */
+    #sobre {
+        background-attachment: fixed;
+    }
+
+    #destaqueSobre {
+        display: inline;
+    }
+
+    #destaqueSobre img {
+        border-radius: 50%;
+        margin: 50px;
+
+    }
 }
