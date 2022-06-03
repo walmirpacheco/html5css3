@@ -180,6 +180,35 @@ body {
     #onepage {
         padding: 50px 10px;
     }
+
+    /* wireframe */
+    #wireframe {
+        padding: 50px 0px;
+        background: url(img/background.png);
+        background-size: cover;
+        background-position: center;
+    }
+
+    #textoWire {
+        color: #fff;
+        padding: 0px 10px;
+    }
+
+    #textoWire h2 {
+        margin-bottom: 10px;
+    }
+
+    #textoWire p {
+        margin-bottom: 40px;
+    }
+
+    #textoWire span{
+        display: none;
+    }
+
+    #qrcode {
+        display: none;
+    }
 /* Smarttphone Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 576px){
     /* Layout */
@@ -230,7 +259,7 @@ body {
     #video iframe {
         width: 560px;
         height: 315px;
-    }
+    }   
 }
 
 /* Tablet Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
@@ -257,7 +286,7 @@ body {
         padding: 50px 0px 10px 0px;
         background: url(img/background.png);
         background-size: cover;
-    }
+    }   
 }
 /* Tablet Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 992px){
@@ -331,5 +360,24 @@ body {
     /* One page */
     .Flex3 {
         flex-direction: row;
+    }
+
+    /* Wireframe */
+    #wireframe {
+        background-attachment: fixed;
+    }
+
+    #wireframe span {
+        display: inline;       
+    }
+
+    #qrcode {
+        display: inline;
+
+    }
+
+    #qrcode img {
+        width: 225px;
+        height: 225px;
     }
 }
